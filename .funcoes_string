@@ -1,0 +1,139 @@
+public class funcoes_string {
+
+
+
+/*FUNÇÕES STRING
+ * REALIZADO POR:
+ * - JOÃO MARIA FONSECA 9830
+ * - LUÍS FARDILHA 10008
+ * 1º ANO DE MULTIMEDIA 2013/2014
+ */
+
+/*1º PASSO: ENTENDER O QUE É UMA STRING!
+ * 
+ * Uma String é uma sequência de caracteres. As strings são utilizadas em várias linguagens de programação. 
+ * Uma string não é um tipo de dado mas sim uma classe.
+ * As suas variáveis são objectos da sua própria classe.
+ * 
+ * 2º PASSO: FUNCIONALIDADES DE UMA STRING:
+ * 
+ * CONCATENAÇÃO;
+ * TAMANHO DA STRING;
+ * CONVERTER PARA MAIÚSCULAS OU MINÚSCULAS;
+ * PESQUISAR UMA STRING;
+ * SUBSTITUIR PARCIALMENTE/TOTALMENTE UMA STRING;
+ * ETC...
+ */
+
+
+/*CONCATENAÇÃO
+ * Baseia-se em juntar strings numa só. Pode ser feita de duas formas:
+ * - usando o método concat() ou usando o sinal de adição +. 
+ */
+
+	/*public static void main(String args[]) {
+		String s = "Sequência de caracteres";
+		s = s.concat(" e não um array de caracteres");
+		System.out.println(s);
+	}
+
+
+/* TAMANHO DA STRING
+ * A classe string possui um método na qual retorna o tamanho da string. Esse método é intitulado de lenght()
+ */
+
+	/*public static void main(String[] args){
+		String str = "Tamanho da String";
+		System.out.println(str + " possui " + str.length() + " caracteres ");
+	}
+	*/
+	
+//CONVERTER PARA MAIUSCULAS OU MINUSCULAS
+// Pode-se também deixar todas as letras de uma sequência maiúsculas ou minúsculas. Para tal usa-se o método 
+//	toUpperCase() ou toLowerCase(), respectivamente.
+
+	
+	/*public static void main(String[] args){
+		String str = "LeTrAs GrAnDeS e PeQUEnas";
+		System.out.println(str.toLowerCase());
+		System.out.println(str.toUpperCase());
+	}
+	*/
+	
+
+//PESQUISAR UMA STRING;
+	// O método indexOf(), ou seja, o método que permite a pesquisa de uma string, retorna um número inteiro que indica a posição 
+	//da string, ou retorna um valor mentor que 0, caso não encontre a string.
+	
+	
+	/*public static void main(String[] args){
+		String pesquisa = "www.google.pt";
+		int posicao;
+		posicao = pesquisa.indexOf("google");
+		if (posicao >=0){
+			System.out.println("A string google começa na posição " + posicao);
+		}
+		else {
+			System.out.println("Não há google na string");
+		}
+	}
+	*/
+	
+	//SUBSTITUIR PARCIALMENTE/TOTALMENTE UMA STRING;
+	// Consiste em substituir parcialmente ou totalmente uma string, através de um método replace(). Este método possui dois parâmetros:
+	//  O primeiro é o que desejamos procurar e o segundo a string que colocaremos no lugar da antiga.
+	
+	
+	/*public static void main(String[] args){
+		String str = "www.google.pt";
+		System.out.println(str.replace("google" , "youtube"));
+		
+	}*/
+	//COMPARAÇÃO
+	//Como a linguagem Java utiliza o metodo case sensitive, ou seja, tem em consideração a utilização adequada
+de maiusculas e minusculas nas funções. Como tal os métodos mais adequados para usar são: sinais de igualdade (==) e
+o método equals(). Este método vai comparar o objecto string com outro objecto caso a operação seja verdadeira, irá
+retornar o valor true e false, caso a operação seja falsa.
+
+	/*public static void main(String[] args) {
+	
+		String string1 = "Programacao";
+	
+		String string2 = "programacao";
+		
+		System.out.println("São iguais? ");
+	
+		System.out.println(string1.equals(string2) ? "sim" : "não");
+	
+		System.out.println("São iguais? ");
+
+		System.out.println(string1.equalsIgnoreCase(string2) ? "sim" : "não");
+		
+		}*/
+	//VERIFICAR CONTEUDO DA STRING
+	//Para verificar o conteudo de uma string existe um método chamado contains(). Este método vai procurar
+na string se existe ou não a sequência de caracteres introduzida.
+
+/*public static void main(String[] args) {
+		
+		String string1 = "www.ismt.pt";
+		
+		System.out.println("É uma página da web?");
+		
+		System.out.println(string1.contains("www.") ? "sim" : "não");
+	
+		}*/
+	//POSICAO DO CARACTER
+	//No java é possível obter um caracter de qualquer parte da string, para isso utilizamos o método
+charAt(). Este metodo recebe como argumento um número inteiro que indica a posição que queremos da string.
+
+	/*public static void main(String[] args) {
+		
+		String string1 = "Java";
+		
+		char caracter = string1.charAt(3);
+	
+		System.out.println("O 4o. caracter desta string é " + caracter);
+		
+		}*/
+Obrigado pela atenção  :D
